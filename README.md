@@ -8,7 +8,7 @@ The first thing that we do in the notebook is some exploratory data analysis. Th
 
 ### Initial Bootstrap Attempt
 
-In our initial bootstrap we don't touch the data at all and instead we split the control and variant data and then split the data into a train and test group. We end up being off by 0.02 for the variant group and 0.11 for the control group. Let's see what we can do about this.
+In our initial bootstrap we don't touch the data at all and instead we split the control and variant data and then split each of these groups into a train and test group. We end up being off by 0.02 for the variant group and 0.11 for the control group. Let's see what we can do about this.
 
 ### Keeping the correct sample proportions
 
@@ -24,4 +24,4 @@ Last we try to remove the outliers to see what happens. We remove the value of $
 
 # Conclusion
 
-While bootstrapping is a very useful technique, this notebook clearly shows to us that bootstrapping does not work very well in certain situations. In situations like this, where your data is very sparse, bootstrapping turns out to give pretty weak results.
+While bootstrapping is a very useful technique, this notebook shows that bootstrapping does not always work well, even with modifications. In situations like this, where your data is very sparse, bootstrapping turns out to give pretty weak results. 
